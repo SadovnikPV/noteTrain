@@ -1,0 +1,140 @@
+/*------------------ Стили главной страницы --------------------*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+	background-color: #F5F5F5;
+}
+
+#page_wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100%;
+}
+
+#header {
+	position: relative;
+	height: 70px;
+	font-size: 35px;
+	font-weight: bold;
+	color: #4169E1;
+	padding: 10px 0 0 20px;
+	background-color: #F5F5F5;
+}
+
+#footer {
+	text-align: center;
+	flex: 0 0 auto;
+	background-color: #c7000a;
+}
+
+#guitarNeck {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-image:url(/img/guitar_neck.JPG);
+	background-repeat:no-repeat;
+	background-position:center;
+	width: 979px;
+	height: 144px;
+}
+
+.stringNeck {
+	display: flex;
+	flex-direction: row;
+	margin: 0 0 4px 0;
+}
+
+.noteNeck {
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	width: 24px;
+	height: 20px;
+	margin: 0 0 0 25px;
+	background-color: aqua;
+	border-radius: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	opacity: .8;
+}
+
+.noteNeck:hover {
+	background-color: rgb(202, 28, 144);
+	cursor: pointer;
+	opacity: 1;
+}
+
+#noteControlMenu {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	margin: 10px 0 10px 0;
+}
+
+.cbInput {
+	width: 18px;
+	height: 18px;
+	margin: 0 5px 0 30px;
+}
+
+.divRow {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 15px 0;
+}
+
+.button, #startTest {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	font-size: 22px;
+	font-weight: bold;
+	width: 200px;
+	height: 50px;
+	margin: 10px 0 0 0;
+	background-color: #4169E1;
+}
+
+.button:hover, #startTest:hover {
+	background-color: #87CEFA;
+	cursor: pointer;
+}
+
+#settingsTest, #testNoteBlock {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	display: none;
+	margin: 10px 0;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.octaveButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	font-weight: bold;
+	margin: 0 15px 0 15px;
+	padding: 4px;
+	background-color: #4169E1;
+}
+
+.octaveButton:hover {
+	background-color: #87CEFA;
+	cursor: pointer;
+}
